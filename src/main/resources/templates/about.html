@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+
+<!--    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">-->
+<!--       <a href="/" class="d-flex align-items-center text-dark text-decoration-none">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title></svg>-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45;            <span class="fs-4">Pricing example</span>&ndash;&gt;-->
+<!--        </a>-->
+<!--        <h5 class="my-0 mr-md-auto font-weight-normal">Blog</h5>-->
+<!--        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">-->
+<!--            <a class="me-3 p-3 text-dark" href="#">Главная</a>-->
+<!--            <a class="me-3 p-3 text-dark" href="#">Блог</a>-->
+<!--            <a class="me-3 p-3 text-dark" href="#">Про нас</a>-->
+<!--&lt;!&ndash;-&#45;&#45;            <a class="p-2 text-dark" href="#">Pricing</a>&ndash;&gt;-->
+<!--        </nav>-->
+<!--    </div>-->
+
+
+<!--    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">...</div>-->
+<!--         <h5 class="my-0 mr-md-auto font-weight-normal">Blog</h5>-->
+<!--         <nav class="my-2 my-md-0 mr-md-3">-->
+<!--            <a class="p-2 text-dark" href="#">Главая</a>-->
+<!--            <a class="p-2 text-dark" href="#">Блог</a>-->
+<!--            <a class="p-2 text-dark" href="#">Про нас</a>-->
+<!--         </nav>-->
+<!--    </div>-->
+
+
+<div class="container mt-5">
+    <h1 th:text="${title}"/>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+
+</body>
+</html>
